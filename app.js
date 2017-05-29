@@ -14,6 +14,10 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(express.static('public'));
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+app.use('/js/jquery', express.static(__dirname + '/node_modules/jquery/dist'))
+app.use('/js/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/js'))
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));

@@ -3,5 +3,33 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet" href="/css/bootstrap.min.css")
+    script(type="text/javascript" src="/js/jquery/jquery.min.js")
+    script(type="text/javascript" src="/js/bootstrap/bootstrap.js")
   body
+    navbar.navbar.navbar-default.navbar-fixed-top
+      div.container-fluid
+        div.navbar-header
+          button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false" aria-controls="bs-navbar")
+            span.sr-only
+              | Toggle Navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand
+            | Tokarz Thoughts
+        div.navbar-collapse.collapse#bs-navbar
+          ul.nav.navbar-nav
+            li.active
+              a(href="#")
+                | Home
+                span.sr-only
+            li
+              a(href="#")
+                |About
+                span.sr-only
+            li
+              a(href="#")
+                |Projects
+                span.sr-only
     block content
