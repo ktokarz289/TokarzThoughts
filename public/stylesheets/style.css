@@ -8,6 +8,7 @@ a {
 }
 
 img#personal {
+  margin-top: 25px;
   height: 250px;
   border-radius: 50%;
 }
