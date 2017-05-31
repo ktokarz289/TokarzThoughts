@@ -1,3 +1,13 @@
 extends layout
 
 block content
+    div.list-group
+        each project in projects
+            a.list-group-item.githubReposLink(href=project.html_url target="_blank")= project.name
+                span.badge= project.open_issues_count
+                span.badgeText
+                    | Open issues
+                span.badge= project.forks_count
+                span.badgeText
+                    | Forks 
+                p.list-group-item-text= project.description

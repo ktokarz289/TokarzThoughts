@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var github = require('octonode');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -11,7 +12,12 @@ router.get('/about', function(req, res, next) {
 });
 
 router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: "Projects"});
+  var client = github.client();
+  client.get('/users/ktokarz289/repos', {}, function(err, status, body, headers) {
+    if (!err) {
+      res.render('projects', { title: "Projects", projects: body});
+    }
+  });
 });
 
 module.exports = router;

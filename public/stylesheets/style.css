@@ -16,3 +16,13 @@ img#personal {
 .header {
   background-color: #16ba23;
 }
+
+.githubReposLink {
+  width: 40%;
+}
+
+.badgeText {
+  float: right;
+  margin: 0 5px;
+}
+
