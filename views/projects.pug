@@ -1,8 +1,27 @@
 extends layout
 
 block content
-    div.list-group
-        a(href=user.html_url)
-            img.githubImage(src=user.avatar_url target="_blank")
-        span.name
-            | Kris Tokarz
+    div.page-header
+        h1.projectsHeader 
+            | My projects
+
+    div.col-md-6.col-md-offset-3.projectContainer
+        h2
+            | Math Bot
+        p.projectParagraphs
+            | This is a small application written using C# and Microsoft's bot sdk. The user types in a basic equation and it returns an answer.
+        p.projectParagraphs
+            | The user will enter an equation such as 8 + 8 * 2 and the bot replies with the correct value. The program was designed using the Reverse Polish Nation (Postfix notation).
+            | The basic idea of this notation is to parse the equation and rewrite it so the operators follow the operands. For example, 8 + 8 * 2 would be represented as 8 8 2 * +.
+        p.projectParagraphs
+            | This application consists of several projects that rely on each other to function. The Postfix calculator will take the operands and the operator to return the correct value for each operation.
+            | The Postfix project is responsible for the algorithm needed to convert an infix equation to postfix. Once the equation is completely parsed it is handed off to the postfix calculator to return
+            | the final result. If I re-wrote this I would either combine the two projects into one or give them a more generic name to allow for other math notation converters.  
+
+    div.col-md-6.col-md-offset-3.projectContainer
+        h2
+            | UofM - Dearborn Networking 
+        p.projectParagraphs
+            | This was a project required for my Networking class in school that was done with one other partner. The basic premise is a sender and receiver (both running locally) that can communicate using TCP.
+            | The sender was supposed to read a large amount of text and continously send it to the receiver. There is a random check to simulate a packet being dropped at which point the sender should resend the
+            | packet that got lost. Since we were students the code isn't the cleanest; however, I find networking to be a fascinating topic and wanted to include this project. 

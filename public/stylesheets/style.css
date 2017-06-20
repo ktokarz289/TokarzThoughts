@@ -45,3 +45,19 @@ img#personal {
   line-height: 1.5;
   font-size: 18px;
 }
+
+.projectsHeader {
+  text-align: center;
+}
+
+.projectParagraphs {
+  margin-left: auto;
+  margin-bottom: 1em;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.projectContainer {
+  text-align: center;
+}
