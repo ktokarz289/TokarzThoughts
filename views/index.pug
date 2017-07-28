@@ -1,20 +1,14 @@
 extends layout
 
 block content
-  
-  div.jumbotron(style="text-align:center")
-    img#personal(src="/images/ktokarz.jpg" alt="Kris Tokarz")
-    p A young developer learning to make the best software possible
-  
-  div.row
-    div.col-md-5.col-md-offset-4
-      p
-        | Welcome to my personal website! I have created this to give myself some freedom to express myself and share various endeavours publicly. Enjoy!
-      br
-      br
-    div.col-md-5.col-md-offset-4
-      p 
-        |My latest interest is VR. I am currently learning how to build small VR applications on Google Daydream. I used to think it was pointless
-        |;however, after playing a basic zombie shooting game I became fascinated.
-      p 
-        |I hope to learn quickly and demonstrate a few of these applications in my projects section soon.
+  div
+    p.aboutMeParagraphs
+      | Welcome to my personal website! I have created this to give myself some freedom <br /> to express myself and share various endeavours publicly. Enjoy!
+    br
+    br
+    
+    p.aboutMeParagraphs 
+      |My latest interest is VR. I am currently learning how to build small VR applications on Google Daydream.<br /> I used to think it was pointless
+      |;however, after playing a basic zombie shooting game I became fascinated.
+    p.aboutMeParagraphs 
+      |I hope to learn quickly and demonstrate a few of these applications in my projects section soon.
