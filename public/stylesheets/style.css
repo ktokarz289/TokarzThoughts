@@ -9,7 +9,7 @@ a {
 
 img#personal {
   margin-top: 25px;
-  height: 250px;
+  height: 150px;
   border-radius: 50%;
 }
 
@@ -60,4 +60,14 @@ img#personal {
 
 .projectContainer {
   text-align: center;
+}
+
+.reducedJumboTronPadding {
+  padding-top: 18px !important;
+  padding-bottom: 0px !important;
+}
+
+.tagline {
+  font-size: 18px;
+  font-weight: bold;
 }

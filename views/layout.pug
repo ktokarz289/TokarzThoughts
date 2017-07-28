@@ -7,34 +7,35 @@ html
     script(type="text/javascript" src="/js/jquery/jquery.min.js")
     script(type="text/javascript" src="/js/bootstrap/bootstrap.js")
   body
-    navbar.navbar.navbar-default.navbar-fixed-top
-      div.container-fluid
-        div.navbar-header
-          button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false" aria-controls="bs-navbar")
-            span.sr-only
-              | Toggle Navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href="/")
-            | Tokarz Thoughts
-        div.navbar-collapse.collapse#bs-navbar
-          ul.nav.navbar-nav
-            li.active
-              a(href="/")
-                | Home
-                span.sr-only
-            li
-              a(href="/about")
-                |About
-                span.sr-only
-            li
-              a(href="projects")
-                |Projects
-                span.sr-only
-    br
-    br
-    br
+    div.jumbotron.reducedJumboTronPadding(style="text-align:center")
+      img#personal(src="/images/ktokarz.jpg" alt="Kris Tokarz")
+      p.tagline A young developer learning to make the best software possible
+      navbar.navbar.navbar-default.navbar
+        div.container-fluid
+          div.navbar-header
+            button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false" aria-controls="bs-navbar")
+              span.sr-only
+                | Toggle Navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href="/")
+              | Tokarz Thoughts
+          div.navbar-collapse.collapse#bs-navbar
+            ul.nav.navbar-nav
+              li.active
+                a(href="/")
+                  | Home
+                  span.sr-only
+              li
+                a(href="/about")
+                  |About
+                  span.sr-only
+              li
+                a(href="projects")
+                  |Projects
+                  span.sr-only
+
     block content
 
     include footer.pug
