@@ -66,10 +66,12 @@ img#personal {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
+  margin: auto;
 }
 
 .banner {
   color: inherit;
   background-color: #0a2457;
   text-align: center;
+  height: 100px;
 }
